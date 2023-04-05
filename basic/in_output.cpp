@@ -25,6 +25,11 @@ int a; long b; char c; float d; double e; // 3 12345678912345 a 334.23 14049.304
     scanf("%d %ld %c %f %lf", &a, &b, &c, &d, &e);
     printf("%d\n%ld\n\%c\n%f\n%.9lf", a, b, c, d,e);
 
-
+// reading an unknown number of inputs
+ int sum = 0, value = 0;
+// read until end-of-file, calculating a running total of all values read
+while (std::cin >> value)
+sum += value; // equivalent to sum = sum + value
+std::cout << "Sum is: " << sum << std::endl;
   
 }
