@@ -43,4 +43,8 @@ for (decltype(ivec.size()) ix = 0; ix != 10; ++ix)
 ivec.push_back(ix); // ok: adds a new element with value ix
 //Caution: Subscript Only Elements that are Known to Exist!
 
-
+//erase elements
+/*
+v.erase(v.begin()+4);
+v.erase(v.begin()+2,v.begin()+5); Removes the elements in the range from start to end inclusive of the start and exclusive of the end
+*/
