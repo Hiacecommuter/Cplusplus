@@ -70,3 +70,4 @@ cout << internal
 // pad the first column, using # as the pad character
 cout << setfill('#')
 
+showpos, noshowpos //+ sign
