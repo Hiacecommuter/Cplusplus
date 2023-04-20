@@ -9,3 +9,5 @@ regex reg_phone(phone_pattern);
 
 //3. use regex funtions
 regex_match(s, reg_phone);
+
+regex cvarPattern ( R"rgx(\.([a-zA-Z_]+))rgx" );
