@@ -1,0 +1,39 @@
+// defination
+int sum = 0, value,     // sum, value, and units_sold have type int
+units_sold = 0;         // sum and units_sold have initial value 0
+Sales_item item;        // item has type Sales_item 
+
+// string is a library type, representing a variable-length sequence of characters
+std::string book("0-201-78345-X");  // book initialized from string literal
+
+//initializers
+/*Initialization is not assignment. Initialization happens when a variable is given
+a value when it is created. Assignment obliterates an object’s current value
+and replaces that value with a new one.*/
+
+//List Initialization
+int units_sold = 0;
+int units_sold = {0};
+int units_sold{0};
+int units_sold(0); //List Initialization, sensitive to loss of information
+
+long double ld = 3.1415926536;
+int a{ld}, b = {ld}; // error: narrowing conversion required
+int c(ld), d = ld; // ok: but value will be truncated
+
+//Default Initialization
+std::string empty; // empty implicitly initialized to the empty string
+
+//declarations and definitions
+/*To support separate compilation, C++ distinguishes between declarations and definitions.
+A declaration makes a name known to the program. A file that wants to
+use a name defined elsewhere includes a declaration for that name. 
+A definition creates the associated entity. */
+
+extern int i; // declares but does not define i
+int j; // declares and defines j
+
+//Any declaration that includes an explicit initializer is a definition.
+/*To use the same variable
+in multiple files, we must define that variable in one—and only one—file. Other files
+that use that variable must declare—but not define—that variable.*/
