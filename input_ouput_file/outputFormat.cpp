@@ -71,3 +71,16 @@ cout << internal
 cout << setfill('#')
 
 showpos, noshowpos //+ sign
+
+cout.precision(4) ;
+cout.width(10);
+cout << 10.12345 << "\n";
+cout.fill('*');
+cout.width(10);
+cout << 10.12345 << "\n";
+
+cout.width(10);
+cout << "Hi!" << "\n"; 
+cout.width(10);
+cout.setf(ios::left);  // which side to fill
+cout << 10.12345; 
