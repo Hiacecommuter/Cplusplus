@@ -1,0 +1,31 @@
+1. insert one by one
+vector<int> v; set<int> s;
+    for (int x : v) 
+    { 
+        // Insert each element into the Set
+        s.insert(x);
+    }
+    
+2.    range converter
+vector<int> v;
+set<int> s(v.begin(), v.end());
+
+3. copy()
+set<int> s;
+ 
+    // Inserting the elements
+    // of the vector in the set
+    // using copy() method
+    copy(
+ 
+        // The pointer to the beginning
+        // of the source container
+        v.begin(),
+       
+        // The pointer to the end
+        // of the source container
+        v.end(),
+ 
+        // Method of copying
+        inserter(s, s.end()));
+ 
