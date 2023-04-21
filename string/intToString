@@ -1,0 +1,9 @@
+std::string s = std::to_string(42);
+
+string str1 = "42";
+string str2 = "54 fifty four";
+string str3 = "62 sixty two 54";
+
+int num1 = stoi(str1);  //42
+int num2 = stoi(str2);  //54
+int num3 = stoi(str3);  //62
