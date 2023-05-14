@@ -1,5 +1,6 @@
 /*
-template <typename T> class blob{
+template <typename T> 
+class blob{
   public:
   typedef T value_type;
   typedef typename std::vector<T>::size_type size_type:
