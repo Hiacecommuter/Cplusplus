@@ -1,0 +1,11 @@
+Python
+The sort key function return the value used for comparison.
+
+element = tuple(a, b, c)
+sorted(list[elements], key=lambda ele: ele[1])
+
+C++
+The sort key function returns the way of comparison of two elements.
+bool func(type x, type y){ return x < y;}
+
+sort(arr.begin(), arr.end(), func);
