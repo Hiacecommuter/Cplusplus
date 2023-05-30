@@ -1,0 +1,18 @@
+Python class attributes
+
+class PyA:
+  instance_counter=0
+  def __init__(self):
+      instance_counter+=1
+  
+  
+C++ class attribtues
+
+class CB{
+  public:
+  static int instance_counter;
+  CB(){
+    instance_counter++;
+  }
+}  
+int CB::instance_counter=0;
