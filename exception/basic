@@ -7,7 +7,8 @@ catch(ExceptionName& e2) // pass by reference
 {
 }
 
-thorw "message";
+try{
+thorw "message";}
 // catch the msg 
 catch (const char* msg) {
      cerr << msg << endl;
