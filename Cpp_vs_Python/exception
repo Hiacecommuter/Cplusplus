@@ -1,0 +1,20 @@
+C++
+thow SomeException();
+catch(SomeException e)
+{
+try{
+thorw "msg";}
+catch (const char* msg){}
+
+try{
+}
+catch()
+{}
+
+Python
+try:
+
+except SomeException:
+
+
+Stardard exceptions
