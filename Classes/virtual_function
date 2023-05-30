@@ -1,0 +1,19 @@
+virtual functions are parent's function for overriding
+
+virtual void func(){};
+
+If some member function vf is declared as virtual in a class Base, and some class Derived, 
+which is derived, directly or indirectly, from Base, 
+has a declaration for member function with the same
+
+- name
+- parameter type list (but not the return type)
+- cv-qualifiers
+- ref-qualifiers
+- Then this function in the class Derived is also virtual (whether or not the keyword virtual is used in its declaration) and overrides Base::vf (whether or not the word override is used in its declaration).
+
+Base::vf does not need to be accessible or visible to be overridden. 
+(Base::vf can be declared private, or Base can be inherited using private inheritance. 
+Any members with the same name in a base class of Derived 
+which inherits Base do not matter for override determination, 
+even if they would hide Base::vf during name lookup.)
