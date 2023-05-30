@@ -3,7 +3,7 @@ try{
 catch( ExceptionName e1)
 {
 }
-catch(ExceptionName e2)
+catch(ExceptionName& e2) // pass by reference
 {
 }
 
