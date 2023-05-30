@@ -1,10 +1,10 @@
 try{
 }
 catch( ExceptionName e1)
-{
+{ e1.what();
 }
 catch(ExceptionName& e2) // pass by reference
-{
+{ e2.what();
 }
 
 try{
