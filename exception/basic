@@ -1,0 +1,30 @@
+try{
+}
+catch( ExceptionName e1)
+{
+}
+catch(ExceptionName e2)
+{
+}
+
+thorw "message";
+// catch the msg 
+catch (const char* msg) {
+     cerr << msg << endl;
+   }
+
+try{
+}
+catch(...)
+{
+}
+
+C++ standard exceptions
+standard:exception and non-standard:exception
+
+//define new exception
+struct MyException : public exception {
+   const char * what () const throw () {
+      return "C++ Exception";
+   }
+};
