@@ -1,0 +1,12 @@
+C++
+A variable is some space reserved in memory, and it has a type, a name, and a value assigned to it
+A pointer is a variable where the value is an address of what it is pointing to.
+A pointer variable is also statically bound to be of a certain type. 
+
+Python
+Variable in Python are more like pointers.
+Variable is a label that always points to an object in the memory heap.
+
+
+#https://intro2ml.pages.doc.ic.ac.uk/autumn2021/modules/lab-cpp/variables#:~:text=In%20C%2B%2B%2C%20a%20variable,heap%20(dynamic%20memory%20allocation).
+
