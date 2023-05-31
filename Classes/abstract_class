@@ -1,0 +1,49 @@
+An abstract class
+- class does not provide some implementation of all functions
+
+A pure virtual function (or abstract function) in C++ is a virtual function
+which must be overridden in the derived class.
+
+A pure virtual function is declared by assigning 0 in declaration
+
+// An abstract class
+class Test
+{   
+    // Data members of class
+public:
+    // Pure Virtual Function
+    virtual void show() = 0;
+    
+   /* Other members */
+};
+
+1. A class is abstract if it has at least one pure virtual function
+
+2. We can points and references of abstract class type
+
+3. If we do not override the pure virtual function in derived class
+   Then derived class also becomes abstract class
+class Base
+{
+public:
+    virtual void show() = 0;
+};
+  
+class Derived : public Base { };
+  
+int main(void)
+{
+  Derived d;
+  return 0;
+}
+
+4. An asbtract class can have constractors
+
+5. An abstract class in C+++ can also be defined using struct keyword
+struct shapeClass
+{
+virtual void Draw()=0;
+};
+
+https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
+ 
