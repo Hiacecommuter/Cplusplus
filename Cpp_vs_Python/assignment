@@ -1,0 +1,12 @@
+Python
+a = [10, 20, 30]
+b = a 
+b[0] = 123
+a and b refer to same object. Same in Java, JaveScript
+
+
+C++
+auto a = std::vector<int> {10, 20, 30};
+auto b = a;
+b[0] = 123;
+b is a deep copy from a
