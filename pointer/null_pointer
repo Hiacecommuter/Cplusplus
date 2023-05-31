@@ -1,0 +1,7 @@
+int* ptr;
+*ptr = 20; // not initialized, cannot do so as ptr is nullptr
+
+NULL vs nullptr
+void func( char* s);
+void func(int a);
+func(NULL);
