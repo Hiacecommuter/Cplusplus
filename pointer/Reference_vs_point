@@ -1,0 +1,7 @@
+& used in declaration, it declares a reference
+& used in expression, it is the address operator
+1. A reference works as a pointer. A reference is declared as an alias of a variable.
+   It stores the address of the variable.
+2. A reference is a name constant for an address. It must be initialized during declaration. 
+   Reference cannot be changed to another variable.
+      
