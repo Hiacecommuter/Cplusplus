@@ -1,0 +1,16 @@
+int a = 1;
+int * ptr = &a;
+
+//no need to define int a
+int *b = new int;
+*b=1;
+delete b;
+
+int * p1 = new int(88);
+double * p2 = new double(1.23);
+
+int * arr;
+arr = new int[10];
+delete[] arr;
+
+int * p = new int[5] {1, 2, 3, 4, 5};
