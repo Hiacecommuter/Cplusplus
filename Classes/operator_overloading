@@ -1,1 +1,5 @@
 https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm
+
+sort(vector<class>.begin(), vector<class>.end)
+use class < method for sorting
+Hackerrank: C++ messages order
