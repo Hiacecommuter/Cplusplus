@@ -1,1 +1,1 @@
-Notes about C++ syntax and common uses
+Notes about C++ syntax and knowledge
