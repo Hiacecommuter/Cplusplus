@@ -1,0 +1,43 @@
+//Background
+In c++ dynamic binding happens when a virtual member function is called through a reference or 
+a pointer to a base-class type. Because we do not know which version of a function is called until run time.
+
+//virtual functions are parent's function for overriding
+
+//define
+virtual void func(){};
+
+Dynamic binding happens only when a virtual function is called through a pointer or a reference.
+When a virtual function is called through a reference or pointer, the compiler generates code to 
+decide at run time which function to call.
+
+When we call a function defined in a base class through a reference or pointer
+to the base class, we do not know the type of the object on which that member
+is executed. The object can be a base-class object or an object of a derived class.
+If the function is virtual, then the decision as to which function to run is delayed
+until run time. The version of the virtual function that is run is the one defined by
+the type of the object to which the reference is bound or to which the pointer
+points.
+On the other hand, calls to nonvirtual functions are bound at compile time.
+
+Once a function is declared as virtual, it remains virtual in the all derived classes
+Derived functions can use virtual keyword or not, as they are virtual function anyway.
+
+A derived-class function that overrides an inherited virtual function must have exactly same:
+- name
+- parameter type list (but not the return type)
+- cv-qualifiers
+- ref-qualifiers
+
+it is legal for a derived class to define a function with
+the same name as a virtual in its base class but with a different parameter list. The
+compiler considers such a function to be independent from the base-class function.
+In such cases, the derived version does not override the version in the base class.
+
+
+
+Base::vf does not need to be accessible or visible to be overridden. 
+(Base::vf can be declared private, or Base can be inherited using private inheritance. 
+Any members with the same name in a base class of Derived 
+which inherits Base do not matter for override determination, 
+even if they would hide Base::vf during name lookup.)
